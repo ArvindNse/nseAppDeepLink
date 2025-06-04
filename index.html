@@ -16,16 +16,22 @@
       const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
       if (/android/i.test(userAgent)) {
+        // Android
         window.location = androidScheme;
         setTimeout(() => {
           window.location = playStoreLink;
         }, 2000);
       } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        // iOS
         window.location = iosScheme;
         setTimeout(() => {
           window.location = appStoreLink;
         }, 2000);
+      } else if (/Macintosh/i.test(userAgent)) {
+        // macOS
+        window.location = appStoreLink;
       } else {
+        // Fallback for Windows, Linux, others
         window.location = playStoreLink;
       }
     }
