@@ -1,3 +1,7 @@
+[build]
+  publish = "build/web"
+  command = "flutter build web"
+
 [[headers]]
   for = "/.well-known/apple-app-site-association"
   [headers.values]
@@ -7,3 +11,8 @@
   for = "/.well-known/assetlinks.json"
   [headers.values]
     Content-Type = "application/json"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
