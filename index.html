@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Open App</title>
-
+<!--
  <script>
   function openApp() {
     const isAndroid = /android/i.test(navigator.userAgent);
@@ -30,7 +30,26 @@
 
   window.onload = openApp;
 </script>
+-->
+<script>
+  function openApp() {
+    const isAndroid = /android/i.test(navigator.userAgent);
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
+    // Wait for 2 seconds before fallback
+    setTimeout(() => {
+      if (isAndroid) {
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.nse.nseindia';
+      } else if (isIOS) {
+        window.location.href = 'https://apps.apple.com/in/app/nseindia/id6736678487';
+      } else {
+        window.location.href = 'https://www.nseindia.com/';
+      }
+    }, 2000);
+  }
+
+  window.onload = openApp;
+</script>
 </head>
 <body>
   <h1>Opening the app...</h1>
