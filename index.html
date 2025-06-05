@@ -11,13 +11,13 @@
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
     if (isAndroid) {
-      const intentUrl = 'intent://details#Intent;scheme=nseindia;package=com.nse.nseindia;end';
+      const intentUrl = 'intent://#Intent;scheme=nseindia;package=com.nse.nseindia;end';
       window.location.href = intentUrl;
       setTimeout(() => {
         window.location.href = 'https://play.google.com/store/apps/details?id=com.nse.nseindia';
       }, 1500);
     } else if (isIOS) {
-      const scheme = 'nseindia://details';
+      const scheme = 'nseindia://';
       window.location = scheme;
       setTimeout(() => {
         window.location.href = 'https://apps.apple.com/in/app/nseindia/id6736678487';
