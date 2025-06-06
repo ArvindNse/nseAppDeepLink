@@ -3,10 +3,9 @@
     "apps": [],
     "details": [
       {
-        "appID": “NFDCHD6632.com.nse.nseindiaiosapp",
+        "appID": "NFDCHD6632.com.nse.nseindiaiosapp",
         "paths": ["*"]
       }
     ]
   }
 }
-  
