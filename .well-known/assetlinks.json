@@ -1,12 +1,12 @@
 [
-  {
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "com.nse.nseindia",
-      "sha256_cert_fingerprints": [
-        "C4:83:54:D5:7A:F7:A6:47:0B:17:BD:AC:4B:06:00:92:8A:F4:0C:83:40:43:C0:AD:6F:49:CA:5B:00:4F:69:11"
-      ]
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.nse.nseindia",
+        "sha256_cert_fingerprints": [
+          "C4:83:54:D5:7A:F7:A6:47:0B:17:BD:AC:4B:06:00:92:8A:F4:0C:83:40:43:C0:AD:6F:49:CA:5B:00:4F:69:11"
+        ]
+      }
     }
-  }
-]
+  ]
