@@ -18,5 +18,15 @@
         "38:BA:D3:B5:9C:4E:3D:B3:2A:40:66:56:34:D5:BD:F0:B2:89:A2:FF:EE:A5:BC:04:CD:54:2D:5F:86:23:4A:0E"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.nse.nseindia",
+      "sha256_cert_fingerprints": [
+        "44:01:61:39:5E:CF:FB:50:47:DB:C7:B9:83:13:9A:A1:51:D7:FC:8B:02:FB:D9:F6:B3:46:9F:60:5C:C1:26:17"
+      ]
+    }
   }
 ]
